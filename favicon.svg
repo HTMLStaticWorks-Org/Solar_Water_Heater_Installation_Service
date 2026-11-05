@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+  <!-- Rounded square background matching the website logo container bg-forest -->
+  <rect width="512" height="512" rx="112" fill="#14532D"/>
+  <!-- Solar Sun & Water Droplet Icon Centered -->
+  <g transform="translate(256, 256)">
+    <!-- Sun Outer Ring / Glow in Vivid Eco Green -->
+    <circle cx="0" cy="-20" r="120" fill="#22C55E"/>
+    <!-- Inner Water Droplet in Pure White -->
+    <path fill="#FFFFFF" d="M0,-105 C0,-105 70,-20 70,30 C70,68.66 38.66,100 0,100 C-38.66,100 -70,68.66 -70,30 C-70,-20 0,-105 0,-105 Z"/>
+    <!-- Solar Collector Base Bar -->
+    <rect x="-130" y="125" width="260" height="32" rx="16" fill="#4ADE80"/>
+  </g>
+</svg>
