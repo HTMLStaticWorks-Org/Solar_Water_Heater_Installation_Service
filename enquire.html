@@ -44,88 +44,137 @@
 </head>
 <body class="bg-creamWhite text-bodyDark dark:bg-[#07170D] dark:text-[#E2E8F0] min-h-screen flex flex-col relative overflow-x-clip font-inter">
 
-  <!-- Sticky Header / Navbar -->
-  <header class="sticky top-0 z-50 bg-white/80 dark:bg-[#07170D]/80 backdrop-blur-md border-b border-sage/10 shadow-sm transition-all duration-300">
+  <!-- Top Announcement & Quick Contact Ribbon -->
+  <div class="bg-forest text-creamWhite text-[11px] sm:text-xs py-2 border-b border-emerald-800/40 font-inter relative z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div class="flex items-center space-x-2 rtl:space-x-reverse">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-cheese text-forest tracking-wide shadow-sm">
+          <i class="fa-solid fa-leaf mr-1 rtl:mr-0 rtl:ml-1"></i> MNRE APPROVED
+        </span>
+        <span class="hidden sm:inline text-gray-200">Get Up to 40% Govt. Subsidy on Rooftop Solar Water Heaters</span>
+        <span class="inline sm:hidden text-gray-200">Up to 40% Govt. Subsidy</span>
+      </div>
+      <div class="flex items-center space-x-4 sm:space-x-6 rtl:space-x-reverse">
+        <a href="tel:18005557652" class="hover:text-cheese transition-colors flex items-center gap-1.5 font-medium">
+          <i class="fa-solid fa-phone text-cheese text-[10px]"></i>
+          <span>+1 (800) 555-SOLAR</span>
+        </a>
+        <a href="contact.html" class="hidden md:flex items-center gap-1.5 hover:text-cheese transition-colors font-medium">
+          <i class="fa-regular fa-clock text-cheese text-[10px]"></i>
+          <span>Free Site Visit (8AM - 6PM)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header / Navbar (Modern Floating Capsule Design) -->
+  <header
+    class="sticky top-0 z-50 bg-white/90 dark:bg-[#07170D]/90 backdrop-blur-xl border-b border-sage/15 shadow-sm shadow-emerald-950/5 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group font-inter">
-          <div class="relative w-11 h-11 bg-gradient-to-tr from-forest to-emerald-700 dark:from-sage dark:to-emerald-400 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+          <div class="relative w-11 h-11 bg-gradient-to-tr from-forest via-emerald-800 to-emerald-600 dark:from-emerald-500 dark:to-lime-400 rounded-2xl flex items-center justify-center shadow-md shadow-emerald-950/20 group-hover:shadow-lg group-hover:scale-105 transition-all duration-300 ring-2 ring-forest/10 dark:ring-emerald-400/20">
             <i class="fa-solid fa-sun text-creamWhite dark:text-forest text-xl relative z-10"></i>
-            <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-sage dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center">
-              <i class="fa-solid fa-droplet text-[9px] text-white dark:text-cheese"></i>
+            <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-cheese dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center shadow-sm">
+              <i class="fa-solid fa-droplet text-[9px] text-forest dark:text-cheese"></i>
             </span>
           </div>
           <div class="flex flex-col text-left rtl:text-right font-inter">
-            <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
-              SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
-            </span>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
+                SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
+              </span>
+              <span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-cheese animate-pulse"></span>
+            </div>
             <span class="text-[9px] tracking-widest uppercase font-semibold text-mutedDark dark:text-gray-400 mt-1">
               SOLAR WATER HEATERS
             </span>
           </div>
         </a>
 
-        <nav class="hidden lg:flex lg:space-x-4 xl:space-x-8 rtl:space-x-reverse font-inter font-medium text-sm xl:text-base whitespace-nowrap animate-fade-in">
-          <a href="index.html" class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage px-1 py-2 transition-colors">Home</a>
-          <a href="home2.html" class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage px-1 py-2 transition-colors">Home 2</a>
-          <a href="about-us.html" class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage px-1 py-2 transition-colors">About Us</a>
-          <a href="products.html" class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage px-1 py-2 transition-colors">Products</a>
-          <a href="subsidy-info.html" class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage px-1 py-2 transition-colors">Subsidy Info</a>
-          <a href="contact.html" class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage px-1 py-2 transition-colors">Contact</a>
+        <!-- Modern Floating Capsule Nav Menu -->
+        <nav
+          class="hidden lg:flex items-center bg-softBeige/90 dark:bg-[#112A19]/90 border border-sage/20 rounded-full p-1.5 shadow-inner backdrop-blur-md font-inter font-medium text-xs xl:text-sm whitespace-nowrap space-x-1 rtl:space-x-reverse animate-fade-in">
+          <a href="index.html"
+            class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Home</a>
+          <a href="home2.html"
+            class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Home 2</a>
+          <a href="about-us.html"
+            class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">About Us</a>
+          <a href="products.html"
+            class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Products</a>
+          <a href="subsidy-info.html"
+            class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Subsidy Info</a>
+          <a href="contact.html"
+            class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Contact</a>
         </nav>
 
         <!-- Right CTA & Toggles -->
-        <div class="flex items-center space-x-2 md:space-x-4 rtl:space-x-reverse">
-          <!-- Theme Toggle (Desktop only) -->
-          <button class="theme-toggle hidden lg:flex w-9 h-9 sm:w-10 sm:h-10 items-center justify-center rounded-lg border border-sage/20 hover:bg-softBeige dark:hover:bg-forest/20 text-forest dark:text-creamWhite transition-all" aria-label="Toggle Theme">
-            <i class="fa-solid fa-sun dark:hidden"></i>
-            <i class="fa-solid fa-moon hidden dark:block"></i>
-          </button>
-          
-          <!-- RTL Toggle (Desktop only) -->
-          <button class="rtl-toggle hidden lg:flex w-9 h-9 sm:w-10 sm:h-10 items-center justify-center rounded-lg border border-sage/20 hover:bg-softBeige dark:hover:bg-forest/20 text-forest dark:text-creamWhite transition-all" aria-label="Toggle Layout Direction">
-            <i class="fa-solid fa-right-left rtl-flip"></i>
+        <div class="flex items-center space-x-2 md:space-x-3 rtl:space-x-reverse">
+          <!-- Theme Toggle -->
+          <button
+            class="theme-toggle hidden lg:flex w-10 h-10 items-center justify-center rounded-xl bg-forest/5 dark:bg-white/5 border border-sage/20 hover:bg-forest/10 dark:hover:bg-white/10 text-forest dark:text-creamWhite transition-all hover:scale-105"
+            aria-label="Toggle Theme">
+            <i class="fa-solid fa-sun dark:hidden text-amber-500"></i>
+            <i class="fa-solid fa-moon hidden dark:block text-cheese"></i>
           </button>
 
-          <!-- Enquire (Desktop only) -->
-          <a href="enquire.html" class="hidden lg:inline-block bg-sage hover:bg-sage/90 dark:bg-cheese dark:hover:bg-cheese/90 text-creamWhite dark:text-forest font-semibold px-4 py-2 sm:px-6 sm:py-2.5 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg text-xs sm:text-sm ring-2 ring-forest/20">
-            Enquire Now
+          <!-- RTL Toggle -->
+          <button
+            class="rtl-toggle hidden lg:flex w-10 h-10 items-center justify-center rounded-xl border border-sage/20 hover:bg-forest/10 dark:hover:bg-white/10 text-forest dark:text-creamWhite transition-all hover:scale-105"
+            aria-label="Toggle Layout Direction">
+            <i class="fa-solid fa-right-left rtl-flip text-xs"></i>
+          </button>
+
+          <!-- Enquire CTA with Highlighted Active Ring -->
+          <a href="enquire.html"
+            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest font-bold px-5 py-2.5 rounded-full shadow-lg shadow-forest/30 ring-2 ring-cheese/70 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
+            <span>Enquire Now</span>
+            <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform rtl-flip"></i>
           </a>
 
           <!-- Hamburger Button -->
-          <button id="mobile-menu-btn" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg border border-sage/20 text-forest dark:text-creamWhite animate-pulse" aria-expanded="false" aria-label="Open menu">
-            <i class="fa-solid fa-bars"></i>
+          <button id="mobile-menu-btn"
+            class="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl bg-forest/5 dark:bg-white/5 border border-sage/20 text-forest dark:text-creamWhite hover:bg-forest/10 transition-all"
+            aria-expanded="false" aria-label="Open menu">
+            <i class="fa-solid fa-bars text-lg"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Mobile Slide-out Menu -->
+    <!-- Enhanced Mobile Slide-out Menu -->
     <div id="mobile-menu"
-      class="hidden lg:hidden bg-creamWhite dark:bg-[#112A19] border-t border-sage/10 px-6 py-8 space-y-5 shadow-xl transition-all duration-300 rounded-b-2xl font-inter">
-      <nav class="flex flex-col space-y-2 font-medium">
-        <a href="index.html" class="flex items-center justify-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
+      class="hidden lg:hidden bg-creamWhite/95 dark:bg-[#112A19]/95 backdrop-blur-2xl border-t border-sage/15 px-6 py-6 space-y-4 shadow-2xl transition-all duration-300 rounded-b-3xl font-inter">
+      <nav class="flex flex-col space-y-1.5 font-medium">
+        <a href="index.html"
+          class="flex items-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
           <i class="fa-solid fa-house mr-3 w-5 text-center text-mutedDark dark:text-gray-400"></i>
           <span>Home</span>
         </a>
-        <a href="home2.html" class="flex items-center justify-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
+        <a href="home2.html"
+          class="flex items-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
           <i class="fa-solid fa-solar-panel mr-3 w-5 text-center text-mutedDark dark:text-gray-400"></i>
           <span>Home 2</span>
         </a>
-        <a href="about-us.html" class="flex items-center justify-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
+        <a href="about-us.html"
+          class="flex items-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
           <i class="fa-solid fa-circle-info mr-3 w-5 text-center text-mutedDark dark:text-gray-400"></i>
           <span>About Us</span>
         </a>
-        <a href="products.html" class="flex items-center justify-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
+        <a href="products.html"
+          class="flex items-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
           <i class="fa-solid fa-water mr-3 w-5 text-center text-mutedDark dark:text-gray-400"></i>
           <span>Products</span>
         </a>
-        <a href="subsidy-info.html" class="flex items-center justify-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300 font-inter">
+        <a href="subsidy-info.html"
+          class="flex items-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
           <i class="fa-solid fa-hand-holding-dollar mr-3 w-5 text-center text-mutedDark dark:text-gray-400"></i>
           <span>Subsidy Info</span>
         </a>
-        <a href="contact.html" class="flex items-center justify-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-sage py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
+        <a href="contact.html"
+          class="flex items-center text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese py-3 px-4 rounded-xl hover:bg-softBeige dark:hover:bg-forest/20 transition-all duration-300">
           <i class="fa-solid fa-envelope mr-3 w-5 text-center text-mutedDark dark:text-gray-400"></i>
           <span>Contact</span>
         </a>
@@ -135,25 +184,27 @@
       <div class="pt-4 border-t border-sage/10 flex justify-center space-x-4 rtl:space-x-reverse">
         <!-- Theme Toggle (Mobile) -->
         <button
-          class="theme-toggle w-12 h-12 flex items-center justify-center rounded-xl border border-sage/20 text-forest dark:text-creamWhite hover:bg-softBeige dark:hover:bg-forest/20 transition-all text-lg"
+          class="theme-toggle w-11 h-11 flex items-center justify-center rounded-xl border border-sage/20 text-forest dark:text-creamWhite hover:bg-softBeige dark:hover:bg-forest/20 transition-all text-base"
           aria-label="Toggle Theme">
-          <i class="fa-solid fa-sun dark:hidden"></i>
-          <i class="fa-solid fa-moon hidden dark:block"></i>
+          <i class="fa-solid fa-sun dark:hidden text-amber-500"></i>
+          <i class="fa-solid fa-moon hidden dark:block text-cheese"></i>
         </button>
 
         <!-- RTL Toggle (Mobile) -->
         <button
-          class="rtl-toggle w-12 h-12 flex items-center justify-center rounded-xl border border-sage/20 text-forest dark:text-creamWhite hover:bg-softBeige dark:hover:bg-forest/20 transition-all text-lg"
+          class="rtl-toggle w-11 h-11 flex items-center justify-center rounded-xl border border-sage/20 text-forest dark:text-creamWhite hover:bg-softBeige dark:hover:bg-forest/20 transition-all text-base"
           aria-label="Toggle Layout Direction">
           <i class="fa-solid fa-right-left"></i>
         </button>
       </div>
 
-      <!-- Action Button -->
+      <!-- Action Button (Active Highlighting) -->
       <div class="pt-2 flex justify-center font-inter">
         <a href="enquire.html"
-          class="w-48 text-center bg-forest text-creamWhite dark:bg-sage dark:text-forest py-2.5 rounded-xl font-semibold shadow-lg hover:bg-forest/90 transition-all duration-300 text-sm tracking-wide">Enquire
-          Now</a>
+          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest py-3 rounded-full font-bold shadow-lg ring-2 ring-cheese/70 hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
+          <span>Enquire Now</span>
+          <i class="fa-solid fa-arrow-right text-xs rtl-flip"></i>
+        </a>
       </div>
     </div>
   </header>
