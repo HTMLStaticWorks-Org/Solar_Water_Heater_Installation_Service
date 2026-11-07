@@ -111,7 +111,7 @@
           <a href="index.html"
             class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Home</a>
           <a href="home2.html"
-            class="bg-forest text-white dark:bg-emerald-500 dark:text-forest font-semibold shadow-sm px-4 py-2 rounded-full transition-all">Home 2</a>
+            class="bg-forest text-white dark:bg-emerald-600 dark:text-white font-semibold shadow-sm px-4 py-2 rounded-full transition-all">Home 2</a>
           <a href="about-us.html"
             class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">About Us</a>
           <a href="products.html"
@@ -141,7 +141,7 @@
 
           <!-- Enquire CTA with Glow & Arrow -->
           <a href="enquire.html"
-            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest font-bold px-5 py-2.5 rounded-full shadow-md shadow-forest/20 hover:shadow-lg hover:shadow-emerald-600/30 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
+            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-600 dark:to-emerald-500 text-white dark:text-white font-bold px-5 py-2.5 rounded-full shadow-md shadow-forest/20 hover:shadow-lg hover:shadow-emerald-600/30 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
             <span>Enquire Now</span>
             <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform rtl-flip"></i>
           </a>
@@ -213,7 +213,7 @@
       <!-- Action Button -->
       <div class="pt-2 flex justify-center font-inter">
         <a href="enquire.html"
-          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
+          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-600 dark:to-emerald-500 text-white dark:text-white py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
           <span>Enquire Now</span>
           <i class="fa-solid fa-arrow-right text-xs rtl-flip"></i>
         </a>
@@ -670,83 +670,86 @@
 
   <!-- Footer -->
   <footer
-    class="bg-white text-bodyDark dark:bg-[#041008] dark:text-[#E2E8F0] pt-16 pb-8 border-t border-sage/10 dark:border-sage/5 mt-auto">
+    class="bg-white text-bodyDark dark:bg-[#041008] dark:text-[#E2E8F0] pt-14 pb-8 border-t border-sage/10 dark:border-sage/5 mt-auto font-inter">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
         <!-- Overview -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-2">
-          <!-- Logo -->
-          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group font-inter">
-            <div class="relative w-11 h-11 bg-gradient-to-tr from-forest to-emerald-700 dark:from-sage dark:to-emerald-400 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+        <div class="sm:col-span-2 lg:col-span-5 pr-0 lg:pr-6">
+          <!-- Logo (Exact match with Header) -->
+          <a href="index.html" class="inline-flex items-center space-x-3 rtl:space-x-reverse group mb-4">
+            <div class="relative w-11 h-11 bg-gradient-to-tr from-forest via-emerald-800 to-emerald-600 dark:from-emerald-500 dark:to-lime-400 rounded-2xl flex items-center justify-center shadow-md shadow-emerald-950/20 group-hover:shadow-lg group-hover:scale-105 transition-all duration-300 ring-2 ring-forest/10 dark:ring-emerald-400/20">
               <i class="fa-solid fa-sun text-creamWhite dark:text-forest text-xl relative z-10"></i>
-              <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-sage dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center">
-                <i class="fa-solid fa-droplet text-[9px] text-white dark:text-cheese"></i>
+              <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-cheese dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-droplet text-[9px] text-forest dark:text-cheese"></i>
               </span>
             </div>
             <div class="flex flex-col text-left rtl:text-right font-inter">
-              <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
-                SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
-              </span>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
+                  SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
+                </span>
+                <span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-cheese animate-pulse"></span>
+              </div>
               <span class="text-[9px] tracking-widest uppercase font-semibold text-mutedDark dark:text-gray-400 mt-1">
                 SOLAR WATER HEATERS
               </span>
             </div>
           </a>
-          <p class="text-sm text-mutedDark dark:text-gray-300 mb-6 leading-relaxed max-w-sm font-inter">
+          <p class="text-sm text-slate-600 dark:text-gray-300 mb-6 leading-relaxed max-w-sm font-inter">
             Providing MNRE-certified ETC and FPC solar water heater installations that cut electricity bills by up to 80% for homes, villas, and commercial establishments.
           </p>
-          <div class="flex space-x-4 rtl:space-x-reverse">
+          <div class="flex space-x-3 rtl:space-x-reverse">
             <a href="#"
-               class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all"
-               aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"
-               class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all"
-               aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"
-               class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all"
-               aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
           </div>
         </div>
 
         <!-- Quick Links -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-1 lg:col-span-2">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm text-mutedDark dark:text-gray-300 font-inter">
-            <li><a href="index.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Home</a></li>
-            <li><a href="home2.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Home 2</a></li>
-            <li><a href="about-us.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">About Us</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Products</a></li>
-            <li><a href="subsidy-info.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Subsidy Info</a></li>
-            <li><a href="contact.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Contact</a></li>
+          <ul class="space-y-2.5 text-sm font-inter">
+            <li><a href="index.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Home</a></li>
+            <li><a href="home2.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Home 2</a></li>
+            <li><a href="about-us.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">About Us</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Products</a></li>
+            <li><a href="subsidy-info.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Subsidy Info</a></li>
+            <li><a href="contact.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Contact</a></li>
           </ul>
         </div>
 
         <!-- Capacities -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-1 lg:col-span-2">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">By Capacity</h4>
-          <ul class="space-y-2 text-sm text-mutedDark dark:text-gray-300 font-inter">
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">100–150 LPD Systems</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">200–250 LPD Systems</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">300–500 LPD Pressurized</a></li>
-            <li><a href="subsidy-info.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Govt. Subsidy Guide</a></li>
+          <ul class="space-y-2.5 text-sm font-inter">
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">100–150 LPD Systems</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">200–250 LPD Systems</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">300–500 LPD Pressurized</a></li>
+            <li><a href="subsidy-info.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Govt. Subsidy Guide</a></li>
           </ul>
         </div>
 
         <!-- Contact Information -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-2 lg:col-span-3">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">Contact Info</h4>
-          <ul class="space-y-3 text-sm text-mutedDark dark:text-gray-300 font-inter">
+          <ul class="space-y-3 text-sm text-slate-600 dark:text-gray-300 font-inter">
             <li class="flex items-start space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-map-pin mt-1 text-forest dark:text-sage"></i>
+              <i class="fa-solid fa-map-pin mt-1 text-forest dark:text-cheese"></i>
               <span>42 Green Energy Park,<br>Sector 18, Eco City, KA 560102</span>
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-phone text-forest dark:text-sage"></i>
-              <span>+1 (800) 555-SOLAR</span>
+              <i class="fa-solid fa-phone text-forest dark:text-cheese"></i>
+              <a href="tel:18005557652" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">+1 (800) 555-SOLAR</a>
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-envelope text-forest dark:text-sage"></i>
-              <span>visit@sunthermsolar.com</span>
+              <i class="fa-solid fa-envelope text-forest dark:text-cheese"></i>
+              <a href="mailto:visit@sunthermsolar.com" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">visit@sunthermsolar.com</a>
             </li>
           </ul>
         </div>
@@ -754,12 +757,12 @@
 
       <!-- Bottom Footer -->
       <div
-        class="border-t border-forest/10 dark:border-sage/20 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-mutedDark dark:text-gray-400 font-inter">
+        class="border-t border-forest/10 dark:border-sage/20 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-gray-400 font-inter">
         <p>&copy; 2026 SunTherm Solar Water Heater Services. All Rights Reserved.</p>
         <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
-          <a href="#" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Terms & Conditions</a>
-          <a href="enquire.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Enquire Now</a>
+          <a href="#" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Terms & Conditions</a>
+          <a href="enquire.html" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Enquire Now</a>
         </div>
       </div>
     </div>

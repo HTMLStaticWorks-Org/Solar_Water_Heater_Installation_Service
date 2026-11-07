@@ -129,7 +129,7 @@
 
           <!-- Enquire CTA with Highlighted Active Ring -->
           <a href="enquire.html"
-            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest font-bold px-5 py-2.5 rounded-full shadow-lg shadow-forest/30 ring-2 ring-cheese/70 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
+            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-600 dark:to-emerald-500 text-white dark:text-white font-bold px-5 py-2.5 rounded-full shadow-lg shadow-forest/30 ring-2 ring-cheese/70 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
             <span>Enquire Now</span>
             <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform rtl-flip"></i>
           </a>
@@ -201,7 +201,7 @@
       <!-- Action Button (Active Highlighting) -->
       <div class="pt-2 flex justify-center font-inter">
         <a href="enquire.html"
-          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest py-3 rounded-full font-bold shadow-lg ring-2 ring-cheese/70 hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
+          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-600 dark:to-emerald-500 text-white dark:text-white py-3 rounded-full font-bold shadow-lg ring-2 ring-cheese/70 hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
           <span>Enquire Now</span>
           <i class="fa-solid fa-arrow-right text-xs rtl-flip"></i>
         </a>
@@ -220,255 +220,364 @@
     </div>
   </section>
 
-  <!-- Enquire Info & Enquire Form (Structured Like Contact Page) -->
-  <section class="py-24 bg-white dark:bg-[#07170D]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+  <!-- Enquire Form Section (Only Enquire Form with Extra Details) -->
+  <section class="py-16 md:py-20 bg-creamWhite dark:bg-[#07170D] font-inter">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Quick Capacity & Savings Reference Card -->
+      <div class="bg-white dark:bg-[#112A19] p-6 sm:p-8 rounded-2xl border border-sage/20 shadow-sm mb-8" data-aos="fade-up">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5 border-b border-sage/10 pb-4">
+          <div>
+            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider block">Sizing Guide</span>
+            <h3 class="font-playfair font-bold text-xl sm:text-2xl text-headingDark dark:text-creamWhite">Quick Capacity & Savings Reference</h3>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1.5 rounded-full border border-emerald-200 dark:border-emerald-800 self-start sm:self-auto">
+            <i class="fa-solid fa-calculator text-[11px]"></i>
+            <span>35–40 LPD per person</span>
+          </span>
+        </div>
         
-        <!-- Left: Capacity Guide & Direct Support -->
-        <div class="lg:col-span-5 space-y-8 font-inter" data-aos="fade-right">
-          <div class="bg-creamWhite dark:bg-[#112A19] p-8 rounded-2xl border border-sage/10 shadow-sm font-inter">
-            <h3 class="font-playfair font-bold text-2xl text-headingDark dark:text-creamWhite mb-6">Why Enquire With Us?</h3>
-            <div class="space-y-6">
-              <div class="flex items-start space-x-4 rtl:space-x-reverse font-inter">
-                <i class="fa-solid fa-calculator text-xl text-sage mt-1"></i>
-                <div>
-                  <h4 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Exact LPD Capacity Sizing</h4>
-                  <p class="text-sm text-mutedDark dark:text-gray-300 mt-1 font-inter">
-                    We match your family size, number of bathrooms, and water pressure needs to the ideal 100 LPD to 1000+ LPD system.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4 rtl:space-x-reverse font-inter">
-                <i class="fa-solid fa-hand-holding-dollar text-xl text-sage mt-1"></i>
-                <div>
-                  <h4 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Instant Subsidy Calculation</h4>
-                  <p class="text-sm text-mutedDark dark:text-gray-300 mt-1 font-inter">
-                    Get an itemized quote showing gross price, MNRE / state capital subsidy deduction, and monthly electricity bill rebate.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4 rtl:space-x-reverse font-inter">
-                <i class="fa-solid fa-Compass-drafting text-xl text-sage mt-1"></i>
-                <div>
-                  <h4 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Free Rooftop & TDS Check</h4>
-                  <p class="text-sm text-mutedDark dark:text-gray-300 mt-1 font-inter">
-                    Every enquiry includes a complimentary water TDS test to recommend either SS-304L or anti-scale Glass-Lined tanks.
-                  </p>
-                </div>
-              </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="p-4 rounded-xl bg-softBeige/60 dark:bg-[#0B2113] border border-sage/10 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-forest dark:text-cheese block mb-1">100 – 150 LPD</span>
+              <p class="text-xs text-mutedDark dark:text-gray-300">2–4 Family Members</p>
             </div>
-
-            <!-- Connect With Us -->
-            <div class="mt-8 pt-8 border-t border-sage/10 font-inter text-left rtl:text-right">
-              <h4 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite mb-4">Direct Solar Helpline</h4>
-              <div class="flex justify-start space-x-4 rtl:space-x-reverse">
-                <a href="#" class="w-10 h-10 rounded-full bg-forest text-creamWhite dark:bg-sage dark:text-forest flex items-center justify-center hover:bg-honey transition-all" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-forest text-creamWhite dark:bg-sage dark:text-forest flex items-center justify-center hover:bg-honey transition-all" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-forest text-creamWhite dark:bg-sage dark:text-forest flex items-center justify-center hover:bg-honey transition-all" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-forest text-creamWhite dark:bg-sage dark:text-forest flex items-center justify-center hover:bg-honey transition-all" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-forest text-creamWhite dark:bg-sage dark:text-forest flex items-center justify-center hover:bg-honey transition-all" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
-              </div>
-            </div>
+            <span class="text-xs font-semibold text-emerald-700 dark:text-emerald-400 mt-2 block">Saves ~₹12,000 / Year</span>
           </div>
 
-          <div class="bg-creamWhite dark:bg-[#112A19] p-8 rounded-2xl border border-sage/10 shadow-sm font-inter">
-            <h3 class="font-playfair font-bold text-2xl text-headingDark dark:text-creamWhite mb-6">Quick Capacity Reference</h3>
-            <ul class="space-y-3 text-sm text-mutedDark dark:text-gray-300 font-inter">
-              <li class="flex justify-between border-b border-sage/10 pb-2">
-                <span>100 – 150 LPD</span>
-                <span class="font-semibold text-headingDark dark:text-creamWhite">2–4 People (Saves ~₹12k/Yr)</span>
-              </li>
-              <li class="flex justify-between border-b border-sage/10 pb-2">
-                <span>200 – 250 LPD</span>
-                <span class="font-semibold text-headingDark dark:text-creamWhite">4–6 People (Saves ~₹20k/Yr)</span>
-              </li>
-              <li class="flex justify-between">
-                <span>300 – 500 LPD</span>
-                <span class="text-sage dark:text-cheese font-semibold">8–12 People (Saves ~₹38k/Yr)</span>
-              </li>
-            </ul>
+          <div class="p-4 rounded-xl bg-softBeige/60 dark:bg-[#0B2113] border border-sage/10 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-forest dark:text-cheese block mb-1">200 – 250 LPD</span>
+              <p class="text-xs text-mutedDark dark:text-gray-300">4–6 Family Members</p>
+            </div>
+            <span class="text-xs font-semibold text-emerald-700 dark:text-emerald-400 mt-2 block">Saves ~₹20,000 / Year</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-softBeige/60 dark:bg-[#0B2113] border border-sage/10 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-forest dark:text-cheese block mb-1">300 – 500 LPD</span>
+              <p class="text-xs text-mutedDark dark:text-gray-300">8–12 Members / Villa</p>
+            </div>
+            <span class="text-xs font-semibold text-emerald-700 dark:text-emerald-400 mt-2 block">Saves ~₹38,000 / Year</span>
           </div>
         </div>
+      </div>
 
-        <!-- Right: Enquire Form -->
-        <div class="lg:col-span-7 font-inter" data-aos="fade-left">
-          <div class="bg-softBeige dark:bg-[#112A19] p-8 md:p-10 rounded-2xl border border-sage/10 shadow-sm font-inter">
-            <h3 class="font-playfair font-bold text-2xl text-headingDark dark:text-creamWhite mb-2">Submit Your Solar Enquiry</h3>
-            <p class="text-xs text-mutedDark dark:text-gray-400 mb-8 font-inter">
-              Fill out the enquiry form below and receive a customized capacity quotation and subsidy breakdown within 4 business hours.
-            </p>
+      <!-- Main Enquiry Form with Extra Details -->
+      <div class="bg-white dark:bg-[#112A19] p-6 sm:p-10 md:p-12 rounded-3xl border border-sage/20 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-sage dark:text-cheese font-semibold text-xs sm:text-sm uppercase tracking-widest block mb-2">Solar Installation Request</span>
+          <h2 class="font-playfair font-bold text-2xl sm:text-4xl text-headingDark dark:text-creamWhite">Complete Solar Water Heater Enquiry</h2>
+          <p class="text-xs sm:text-sm text-mutedDark dark:text-gray-300 mt-2 leading-relaxed">
+            Please provide your property and hot water requirement details below. Our solar thermal engineer will prepare your itemized quote, calculate your MNRE subsidy deduction, and verify site feasibility.
+          </p>
+        </div>
 
-            <form class="inquiry-form space-y-6">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">Full Name *</label>
-                  <input type="text" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">Email Address *</label>
-                  <input type="email" required placeholder="Enter your email address" class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">Phone Number *</label>
-                  <input type="tel" required placeholder="Enter your mobile number" class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">City / Pin Code *</label>
-                  <input type="text" required placeholder="Enter your city or pin code" class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">System Capacity (LPD) *</label>
-                  <select required class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
-                    <option value="">Select Capacity</option>
-                    <option value="100 LPD">100 LPD (2–3 Members)</option>
-                    <option value="150 LPD">150 LPD (3–4 Members)</option>
-                    <option value="200 LPD">200 LPD (4–5 Members)</option>
-                    <option value="250 LPD">250 LPD (5–6 Members)</option>
-                    <option value="300-500 LPD">300–500 LPD (Villa / Joint Family)</option>
-                    <option value="1000+ LPD">1000+ LPD Commercial Array</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">Collector & Water Type *</label>
-                  <select required class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
-                    <option value="">Select Collector Preference</option>
-                    <option value="ETC Municipal Water">ETC Vacuum Tube (Municipal Soft Water)</option>
-                    <option value="ETC Glass-Lined Hard Water">ETC Glass-Lined (Borewell Hard Water)</option>
-                    <option value="FPC Copper Collector">FPC Copper Collector (All-Weather)</option>
-                    <option value="Pressurized Pump Compatible">Pressurized System (For Pressure Pumps)</option>
-                  </select>
-                </div>
-              </div>
-
+        <form class="inquiry-form space-y-8">
+          <!-- Step 1: Personal & Contact Information -->
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-sage/15">
+              <span class="w-6 h-6 rounded-full bg-forest dark:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">1</span>
+              <h3 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Contact & Site Location</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
-                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2 font-inter">Enquiry Details & Subsidy Questions *</label>
-                <textarea required rows="5" placeholder="Tell us about your roof type, number of bathrooms, current monthly electricity bill, or any subsidy questions..." class="w-full px-4 py-3 rounded-lg border border-sage/30 bg-white dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm"></textarea>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Full Name *</label>
+                <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
               </div>
-
-              <button type="submit" class="bg-forest hover:bg-forest/90 dark:bg-sage dark:hover:bg-sage/90 text-creamWhite dark:text-forest font-semibold px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all w-full font-inter">
-                Submit Solar Enquiry
-              </button>
-            </form>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Phone / WhatsApp Number *</label>
+                <input type="tel" required placeholder="e.g. +91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Email Address *</label>
+                <input type="email" required placeholder="e.g. ramesh@example.com" class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">City & PIN Code *</label>
+                <input type="text" required placeholder="e.g. Bengaluru, KA - 560102" class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Complete Rooftop / Installation Address *</label>
+                <input type="text" required placeholder="House/Villa No., Street Name, Area/Locality, Landmark" class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+              </div>
+            </div>
           </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
+          <!-- Step 2: Capacity & Household Sizing Details -->
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-sage/15">
+              <span class="w-6 h-6 rounded-full bg-forest dark:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">2</span>
+              <h3 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Capacity & Household Sizing</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Required System Capacity (LPD) *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Desired Capacity</option>
+                  <option value="100 LPD">100 LPD (2–3 Members)</option>
+                  <option value="150 LPD">150 LPD (3–4 Members)</option>
+                  <option value="200 LPD">200 LPD (4–5 Members)</option>
+                  <option value="250 LPD">250 LPD (5–6 Members)</option>
+                  <option value="300 LPD">300 LPD (6–8 Members)</option>
+                  <option value="500 LPD">500 LPD (Villa / Joint Family)</option>
+                  <option value="1000+ LPD">1000+ LPD (Commercial Manifold)</option>
+                  <option value="Expert Suggestion">Not sure — Recommend for me</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Number of Daily Users / Family Members *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Number of People</option>
+                  <option value="1-3 People">1 – 3 People</option>
+                  <option value="4-5 People">4 – 5 People</option>
+                  <option value="6-8 People">6 – 8 People</option>
+                  <option value="9+ People">9+ People / Commercial</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Number of Bathrooms / Outlets *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Bathrooms</option>
+                  <option value="1-2 Bathrooms">1 – 2 Bathrooms</option>
+                  <option value="3-4 Bathrooms">3 – 4 Bathrooms</option>
+                  <option value="5+ Bathrooms">5+ Bathrooms</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Property Category *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Property Type</option>
+                  <option value="Individual Villa / House">Individual Villa / Independent House</option>
+                  <option value="Apartment / Housing Society">Apartment / Gated Community</option>
+                  <option value="Commercial / Hotel">Hotel / Resort / Guest House</option>
+                  <option value="Hostel / Hospital">Hostel / PG / Hospital / Institution</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
-  <!-- Map Section -->
-  <section class="py-16 bg-softBeige dark:bg-[#091C10] border-t border-sage/10 font-inter" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10">
-      <span class="text-sage dark:text-cheese font-semibold text-sm uppercase tracking-widest font-inter">Service Coverage</span>
-      <h2 class="font-playfair font-bold text-3xl md:text-4xl text-headingDark dark:text-creamWhite mt-2">Our Solar Experience & Dispatch Center</h2>
-      <p class="text-sm text-mutedDark dark:text-gray-300 mt-3 max-w-xl mx-auto">
-        We provide rapid doorstep delivery, rooftop installation, and onsite subsidy verification across all residential and industrial zones.
-      </p>
-    </div>
-    <div class="w-full h-[450px] relative">
-      <!-- Styled absolute label overlay -->
-      <div class="absolute top-6 left-6 z-10 bg-white dark:bg-[#112A19] p-4 rounded-xl shadow-lg border border-sage/10 hidden md:block">
-        <h4 class="font-playfair font-bold text-base text-headingDark dark:text-creamWhite"><i class="fa-solid fa-sun text-sage mr-2"></i>SunTherm Solar Headquarters</h4>
-        <p class="text-xs text-mutedDark dark:text-gray-400 mt-1">42 Green Energy Park, Sector 18, Eco City, KA 560102</p>
+          <!-- Step 3: Technical & Water Quality Details -->
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-sage/15">
+              <span class="w-6 h-6 rounded-full bg-forest dark:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">3</span>
+              <h3 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Water Quality & Rooftop Specifications</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Water Source & Hardness *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Water Type</option>
+                  <option value="Municipal Soft Water">Municipal / Corporation Soft Water (TDS < 300 PPM)</option>
+                  <option value="Borewell Hard Water">Borewell Hard Water (TDS > 500 PPM - Glass Lined Tank Recommended)</option>
+                  <option value="Mixed / Tanker Water">Mixed / Tanker Water</option>
+                  <option value="Need TDS Test">Not Sure (Need Free Water TDS Test)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Collector Technology Preference *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Collector Preference</option>
+                  <option value="ETC Vacuum Tube">ETC Evacuated Tube Collector (Fast Heating & High Value)</option>
+                  <option value="ETC Glass-Lined Hard Water">ETC Glass-Lined Anti-Scale (Borewell Resistant)</option>
+                  <option value="FPC Copper Collector">FPC Copper Flat Plate (Rugged, Storm & Hail Resistant)</option>
+                  <option value="Pressurized System">Pressurized System (6 Bar for Pressure Pumps & Rain Showers)</option>
+                  <option value="Expert Advice">Recommend best system during inspection</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Rooftop Type *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Roof Type</option>
+                  <option value="Flat Concrete RCC">Flat Concrete RCC Rooftop</option>
+                  <option value="Sloped / Tiled Roof">Sloped / Clay Tiled Rooftop (Pitched Stand)</option>
+                  <option value="Metal Sheet Shed">Industrial / Metal Sheet Shed</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Existing Water Heating System</label>
+                <select class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Existing Geyser</option>
+                  <option value="Electric Geysers">Electric Storage / Instant Geysers</option>
+                  <option value="Gas Geyser">Gas Geyser</option>
+                  <option value="Old Solar System Replacement">Old Solar Water Heater (Need Replacement)</option>
+                  <option value="New Construction">New Construction (No System Currently)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Subsidy Verification & Visit Scheduling -->
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-sage/15">
+              <span class="w-6 h-6 rounded-full bg-forest dark:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">4</span>
+              <h3 class="font-playfair font-bold text-lg text-headingDark dark:text-creamWhite">Subsidy Verification & Consultation Slot</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Current Monthly Electricity Bill</label>
+                <select class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Bill Range</option>
+                  <option value="Under ₹2,000">Under ₹2,000 / month</option>
+                  <option value="₹2,000 - ₹5,000">₹2,000 – ₹5,000 / month</option>
+                  <option value="₹5,000 - ₹10,000">₹5,000 – ₹10,000 / month</option>
+                  <option value="Above ₹10,000">Above ₹10,000 / month (Commercial)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Preferred Site Visit / Callback Slot *</label>
+                <select required class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
+                  <option value="">Select Preferred Time</option>
+                  <option value="Morning (9 AM - 12 PM)">Morning (9:00 AM – 12:00 PM)</option>
+                  <option value="Afternoon (12 PM - 4 PM)">Afternoon (12:00 PM – 4:00 PM)</option>
+                  <option value="Evening (4 PM - 7 PM)">Evening (4:00 PM – 7:00 PM)</option>
+                  <option value="Weekend Only">Weekend Only (Saturday / Sunday)</option>
+                </select>
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-xs font-bold text-headingDark dark:text-creamWhite uppercase tracking-wider mb-2">Additional Rooftop Details & Subsidy Questions</label>
+                <textarea rows="4" placeholder="Tell us about your overhead water tank height, shadow-free roof area, number of floors, or specific subsidy discount questions..." class="w-full px-4 py-3 rounded-xl border border-sage/30 bg-softBeige/40 dark:bg-[#091C10] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-sage/15 text-center">
+            <div class="p-3 rounded-xl bg-softBeige/60 dark:bg-[#0B2113]">
+              <i class="fa-solid fa-compass-drafting text-sage text-base mb-1"></i>
+              <p class="text-[11px] font-bold text-headingDark dark:text-creamWhite">Free Site Inspection</p>
+              <span class="text-[10px] text-mutedDark dark:text-gray-400">Zero-cost feasibility</span>
+            </div>
+            <div class="p-3 rounded-xl bg-softBeige/60 dark:bg-[#0B2113]">
+              <i class="fa-solid fa-hand-holding-dollar text-sage text-base mb-1"></i>
+              <p class="text-[11px] font-bold text-headingDark dark:text-creamWhite">Up to 40% Subsidy</p>
+              <span class="text-[10px] text-mutedDark dark:text-gray-400">MNRE & State Rebate</span>
+            </div>
+            <div class="p-3 rounded-xl bg-softBeige/60 dark:bg-[#0B2113]">
+              <i class="fa-solid fa-flask text-sage text-base mb-1"></i>
+              <p class="text-[11px] font-bold text-headingDark dark:text-creamWhite">Free Water TDS Test</p>
+              <span class="text-[10px] text-mutedDark dark:text-gray-400">Scale protection</span>
+            </div>
+            <div class="p-3 rounded-xl bg-softBeige/60 dark:bg-[#0B2113]">
+              <i class="fa-solid fa-clock text-sage text-base mb-1"></i>
+              <p class="text-[11px] font-bold text-headingDark dark:text-creamWhite">4-Hour Response</p>
+              <span class="text-[10px] text-mutedDark dark:text-gray-400">Rapid consultation</span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-forest hover:bg-forest/90 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-base">
+              <span>Submit Solar Water Heater Enquiry</span>
+              <i class="fa-solid fa-arrow-right text-sm rtl-flip"></i>
+            </button>
+            <p class="text-[11px] text-center text-mutedDark dark:text-gray-400 mt-3 font-inter">
+              <i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i>
+              Your details are kept strictly confidential. We do not spam. Free quotation with zero purchase obligation.
+            </p>
+          </div>
+        </form>
       </div>
-      <!-- Google maps iframe -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115682.35921820696!2d-122.4200676451648!3d37.77927680000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b53cf5d2b%3A0xe5eb6c4293021f1d!2sGolden%20Gate%20Park!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white text-bodyDark dark:bg-[#041008] dark:text-[#E2E8F0] pt-16 pb-8 border-t border-sage/10 dark:border-sage/5 mt-auto font-inter">
+  <footer
+    class="bg-white text-bodyDark dark:bg-[#041008] dark:text-[#E2E8F0] pt-14 pb-8 border-t border-sage/10 dark:border-sage/5 mt-auto font-inter">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
         <!-- Overview -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-2">
-          <!-- Logo -->
-          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group font-inter">
-            <div class="relative w-11 h-11 bg-gradient-to-tr from-forest to-emerald-700 dark:from-sage dark:to-emerald-400 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+        <div class="sm:col-span-2 lg:col-span-5 pr-0 lg:pr-6">
+          <!-- Logo (Exact match with Header) -->
+          <a href="index.html" class="inline-flex items-center space-x-3 rtl:space-x-reverse group mb-4">
+            <div class="relative w-11 h-11 bg-gradient-to-tr from-forest via-emerald-800 to-emerald-600 dark:from-emerald-500 dark:to-lime-400 rounded-2xl flex items-center justify-center shadow-md shadow-emerald-950/20 group-hover:shadow-lg group-hover:scale-105 transition-all duration-300 ring-2 ring-forest/10 dark:ring-emerald-400/20">
               <i class="fa-solid fa-sun text-creamWhite dark:text-forest text-xl relative z-10"></i>
-              <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-sage dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center">
-                <i class="fa-solid fa-droplet text-[9px] text-white dark:text-cheese"></i>
+              <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-cheese dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-droplet text-[9px] text-forest dark:text-cheese"></i>
               </span>
             </div>
             <div class="flex flex-col text-left rtl:text-right font-inter">
-              <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
-                SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
-              </span>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
+                  SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
+                </span>
+                <span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-cheese animate-pulse"></span>
+              </div>
               <span class="text-[9px] tracking-widest uppercase font-semibold text-mutedDark dark:text-gray-400 mt-1">
                 SOLAR WATER HEATERS
               </span>
             </div>
           </a>
-          <p class="text-sm text-mutedDark dark:text-gray-300 mb-6 leading-relaxed max-w-sm font-inter">
+          <p class="text-sm text-slate-600 dark:text-gray-300 mb-6 leading-relaxed max-w-sm font-inter">
             Providing MNRE-certified ETC and FPC solar water heater installations that cut electricity bills by up to 80% for homes, villas, and commercial establishments.
           </p>
-          <div class="flex space-x-4 rtl:space-x-reverse">
-            <a href="#" class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <div class="flex space-x-3 rtl:space-x-reverse">
+            <a href="#"
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
           </div>
         </div>
 
         <!-- Quick Links -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-1 lg:col-span-2">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm text-mutedDark dark:text-gray-300 font-inter">
-            <li><a href="index.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Home</a></li>
-            <li><a href="home2.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Home 2</a></li>
-            <li><a href="about-us.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">About Us</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Products</a></li>
-            <li><a href="subsidy-info.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Subsidy Info</a></li>
-            <li><a href="contact.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Contact</a></li>
+          <ul class="space-y-2.5 text-sm font-inter">
+            <li><a href="index.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Home</a></li>
+            <li><a href="home2.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Home 2</a></li>
+            <li><a href="about-us.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">About Us</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Products</a></li>
+            <li><a href="subsidy-info.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Subsidy Info</a></li>
+            <li><a href="contact.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Contact</a></li>
           </ul>
         </div>
 
         <!-- Capacities -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1 font-inter">
-          <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4 font-inter">By Capacity</h4>
-          <ul class="space-y-2 text-sm text-mutedDark dark:text-gray-300 font-inter">
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">100–150 LPD Systems</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">200–250 LPD Systems</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">300–500 LPD Pressurized</a></li>
-            <li><a href="subsidy-info.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Govt. Subsidy Guide</a></li>
+        <div class="sm:col-span-1 lg:col-span-2">
+          <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">By Capacity</h4>
+          <ul class="space-y-2.5 text-sm font-inter">
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">100–150 LPD Systems</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">200–250 LPD Systems</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">300–500 LPD Pressurized</a></li>
+            <li><a href="subsidy-info.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Govt. Subsidy Guide</a></li>
           </ul>
         </div>
 
         <!-- Contact Information -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1 font-inter">
-          <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4 font-inter">Contact Info</h4>
-          <ul class="space-y-3 text-sm text-mutedDark dark:text-gray-300 font-inter">
+        <div class="sm:col-span-2 lg:col-span-3">
+          <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">Contact Info</h4>
+          <ul class="space-y-3 text-sm text-slate-600 dark:text-gray-300 font-inter">
             <li class="flex items-start space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-map-pin mt-1 text-forest dark:text-sage"></i>
+              <i class="fa-solid fa-map-pin mt-1 text-forest dark:text-cheese"></i>
               <span>42 Green Energy Park,<br>Sector 18, Eco City, KA 560102</span>
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-phone text-forest dark:text-sage"></i>
-              <span>+1 (800) 555-SOLAR</span>
+              <i class="fa-solid fa-phone text-forest dark:text-cheese"></i>
+              <a href="tel:18005557652" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">+1 (800) 555-SOLAR</a>
             </li>
-            <li class="flex items-center space-x-2.5 rtl:space-x-reverse font-inter">
-              <i class="fa-solid fa-envelope text-forest dark:text-sage"></i>
-              <span>visit@sunthermsolar.com</span>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i class="fa-solid fa-envelope text-forest dark:text-cheese"></i>
+              <a href="mailto:visit@sunthermsolar.com" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">visit@sunthermsolar.com</a>
             </li>
           </ul>
         </div>
       </div>
 
       <!-- Bottom Footer -->
-      <div class="border-t border-forest/10 dark:border-sage/20 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-mutedDark dark:text-gray-400 font-inter">
+      <div
+        class="border-t border-forest/10 dark:border-sage/20 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-gray-400 font-inter">
         <p>&copy; 2026 SunTherm Solar Water Heater Services. All Rights Reserved.</p>
-        <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0 font-inter">
-          <a href="#" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Terms & Conditions</a>
-          <a href="enquire.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Enquire Now</a>
+        <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
+          <a href="#" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Terms & Conditions</a>
+          <a href="enquire.html" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Enquire Now</a>
         </div>
       </div>
     </div>

@@ -107,7 +107,7 @@
           <a href="about-us.html"
             class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">About Us</a>
           <a href="products.html"
-            class="bg-forest text-white dark:bg-emerald-500 dark:text-forest font-semibold shadow-sm px-4 py-2 rounded-full transition-all">Products</a>
+            class="bg-forest text-white dark:bg-emerald-600 dark:text-white font-semibold shadow-sm px-4 py-2 rounded-full transition-all">Products</a>
           <a href="subsidy-info.html"
             class="text-bodyDark dark:text-gray-300 hover:text-forest dark:hover:text-cheese hover:bg-forest/10 dark:hover:bg-white/10 px-4 py-2 rounded-full transition-all">Subsidy Info</a>
           <a href="contact.html"
@@ -133,7 +133,7 @@
 
           <!-- Enquire CTA with Glow & Arrow -->
           <a href="enquire.html"
-            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest font-bold px-5 py-2.5 rounded-full shadow-md shadow-forest/20 hover:shadow-lg hover:shadow-emerald-600/30 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
+            class="hidden lg:inline-flex items-center gap-2 bg-gradient-to-r from-forest via-emerald-800 to-forest hover:from-emerald-800 hover:to-forest dark:from-emerald-600 dark:to-emerald-500 text-white dark:text-white font-bold px-5 py-2.5 rounded-full shadow-md shadow-forest/20 hover:shadow-lg hover:shadow-emerald-600/30 hover:scale-[1.03] transition-all duration-300 text-xs sm:text-sm group">
             <span>Enquire Now</span>
             <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform rtl-flip"></i>
           </a>
@@ -205,7 +205,7 @@
       <!-- Action Button -->
       <div class="pt-2 flex justify-center font-inter">
         <a href="enquire.html"
-          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-500 dark:to-emerald-400 text-creamWhite dark:text-forest py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
+          class="w-full text-center bg-gradient-to-r from-forest to-emerald-700 dark:from-emerald-600 dark:to-emerald-500 text-white dark:text-white py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-sm tracking-wide flex items-center justify-center gap-2">
           <span>Enquire Now</span>
           <i class="fa-solid fa-arrow-right text-xs rtl-flip"></i>
         </a>
@@ -225,37 +225,37 @@
     </div>
   </section>
 
-  <!-- Filters & Search Bar Section -->
+  <!-- Filters & Search Bar Section (Clean relative positioning to eliminate scroll overlap) -->
   <section
-    class="py-12 bg-white dark:bg-[#07170D] border-b border-sage/10 sticky top-20 z-40 shadow-sm bg-opacity-95 backdrop-blur-md">
+    class="py-8 bg-white dark:bg-[#07170D] border-b border-sage/10 relative z-20 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-6">
 
       <!-- Category Tabs by Capacity -->
-      <div class="flex flex-wrap gap-2 md:gap-3 justify-center order-2 lg:order-1">
+      <div class="flex flex-wrap gap-2 md:gap-3 justify-center order-2 lg:order-1 font-inter">
         <button data-filter="all"
-          class="filter-btn active px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-forest text-creamWhite">
+          class="filter-btn active px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-forest text-white dark:bg-emerald-600 dark:text-white shadow-sm">
           All Capacities
         </button>
         <button data-filter="100-150"
-          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige text-forest hover:bg-sage/20">
+          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige dark:bg-[#112A19] text-forest dark:text-gray-200 hover:bg-sage/20 border border-sage/10">
           100–150 LPD
         </button>
         <button data-filter="200-250"
-          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige text-forest hover:bg-sage/20">
+          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige dark:bg-[#112A19] text-forest dark:text-gray-200 hover:bg-sage/20 border border-sage/10">
           200–250 LPD
         </button>
         <button data-filter="300-500"
-          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige text-forest hover:bg-sage/20">
+          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige dark:bg-[#112A19] text-forest dark:text-gray-200 hover:bg-sage/20 border border-sage/10">
           300–500 LPD
         </button>
         <button data-filter="commercial"
-          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige text-forest hover:bg-sage/20">
+          class="filter-btn px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 bg-softBeige dark:bg-[#112A19] text-forest dark:text-gray-200 hover:bg-sage/20 border border-sage/10">
           1000+ LPD Commercial
         </button>
       </div>
 
       <!-- Search Input -->
-      <div class="relative w-full lg:w-80 order-1 lg:order-2">
+      <div class="relative w-full lg:w-80 order-1 lg:order-2 font-inter">
         <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-sage"></i>
         <input type="text" id="course-search" placeholder="Search by LPD capacity or model..."
           class="w-full pl-10 pr-4 py-2.5 rounded-lg border border-sage/30 bg-creamWhite dark:bg-[#112A19] text-bodyDark dark:text-creamWhite focus:outline-none focus:ring-2 focus:ring-sage font-inter text-sm">
@@ -266,136 +266,184 @@
   <!-- Product Grid -->
   <section class="py-16 bg-creamWhite dark:bg-[#07170D]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div id="collection-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div id="collection-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
 
         <!-- Item 1 (100-150 LPD) -->
         <div
-          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col transition-all duration-300"
+          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col h-full transition-all duration-300"
           data-category="100-150" data-aos="fade-up">
-          <div class="h-64 relative overflow-hidden">
+          <div class="h-60 relative overflow-hidden shrink-0">
             <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80"
               alt="100 LPD Compact ETC Solar Heater" class="w-full h-full object-cover">
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter">100 LPD Capacity</span>
-            <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mt-1 mb-2">100 LPD Compact ETC System</h3>
-            <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 flex-grow font-inter">
-              Equipped with 10 high-absorption triple-layer vacuum tubes and 50mm PUF insulated SS-304L tank. Saves up to 1,200 kWh of electricity every year.
-            </p>
-            <div class="border-t border-sage/10 pt-4 mt-auto space-y-2 text-xs text-mutedDark dark:text-gray-400 font-inter">
-              <div><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey"></i><strong>Annual Savings:</strong> ~₹10,500 / Year (5 Yr Warranty)</div>
-              <div><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange"></i><strong>Collector Type:</strong> Evacuated Tube (ETC Non-Pressurized)</div>
-              <div><i class="fa-solid fa-house-chimney mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage"></i><strong>Best Suited For:</strong> 2–3 Members (1–2 Bathrooms)</div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter block mb-1">100 LPD Capacity</span>
+              <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mb-2 min-h-[3.25rem] flex items-center">100 LPD Compact ETC System</h3>
+              <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 min-h-[4.25rem] leading-relaxed font-inter">
+                Equipped with 10 high-absorption triple-layer vacuum tubes and 50mm PUF insulated SS-304L tank. Saves up to 1,200 kWh of electricity every year.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-sage/10 pt-4 mb-5 space-y-2.5 text-xs text-mutedDark dark:text-gray-400 font-inter min-h-[6.5rem]">
+                <div class="flex items-start"><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey shrink-0 mt-0.5"></i><span><strong>Annual Savings:</strong> ~₹10,500 / Year (5 Yr Warranty)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange shrink-0 mt-0.5"></i><span><strong>Collector Type:</strong> Evacuated Tube (ETC Non-Pressurized)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-house-chimney mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage shrink-0 mt-0.5"></i><span><strong>Best Suited For:</strong> 2–3 Members (1–2 Bathrooms)</span></div>
+              </div>
+              <a href="enquire.html" class="w-full text-center py-2.5 px-4 rounded-xl font-semibold bg-forest hover:bg-forest/90 text-white dark:bg-emerald-600 dark:text-white dark:hover:bg-emerald-500 shadow-sm transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                <span>Enquire for Capacity</span>
+                <i class="fa-solid fa-arrow-right text-[10px] rtl-flip"></i>
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Item 2 (100-150 LPD) -->
         <div
-          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col transition-all duration-300"
+          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col h-full transition-all duration-300"
           data-category="100-150" data-aos="fade-up" data-aos-delay="100">
-          <div class="h-64 relative overflow-hidden">
+          <div class="h-60 relative overflow-hidden shrink-0">
             <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=80"
               alt="150 LPD Hard-Water Solar Heater" class="w-full h-full object-cover">
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter">150 LPD Capacity</span>
-            <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mt-1 mb-2">150 LPD Ceramic Glass-Lined ETC</h3>
-            <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 flex-grow font-inter">
-              Features 15 borosilicate vacuum tubes and an anti-scale vitreous enamel glass-lined inner tank designed specifically for borewell hard water.
-            </p>
-            <div class="border-t border-sage/10 pt-4 mt-auto space-y-2 text-xs text-mutedDark dark:text-gray-400 font-inter">
-              <div><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey"></i><strong>Annual Savings:</strong> ~₹15,000 / Year (7 Yr Warranty)</div>
-              <div><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange"></i><strong>Collector Type:</strong> Hard-Water ETC + Anode Rod</div>
-              <div><i class="fa-solid fa-house-chimney mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage"></i><strong>Best Suited For:</strong> 3–4 Members (2 Bathrooms)</div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter block mb-1">150 LPD Capacity</span>
+              <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mb-2 min-h-[3.25rem] flex items-center">150 LPD Ceramic Glass-Lined ETC</h3>
+              <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 min-h-[4.25rem] leading-relaxed font-inter">
+                Features 15 borosilicate vacuum tubes and an anti-scale vitreous enamel glass-lined inner tank designed specifically for borewell hard water.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-sage/10 pt-4 mb-5 space-y-2.5 text-xs text-mutedDark dark:text-gray-400 font-inter min-h-[6.5rem]">
+                <div class="flex items-start"><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey shrink-0 mt-0.5"></i><span><strong>Annual Savings:</strong> ~₹15,000 / Year (7 Yr Warranty)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange shrink-0 mt-0.5"></i><span><strong>Collector Type:</strong> Hard-Water ETC + Anode Rod</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-house-chimney mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage shrink-0 mt-0.5"></i><span><strong>Best Suited For:</strong> 3–4 Members (2 Bathrooms)</span></div>
+              </div>
+              <a href="enquire.html" class="w-full text-center py-2.5 px-4 rounded-xl font-semibold bg-forest hover:bg-forest/90 text-white dark:bg-emerald-600 dark:text-white dark:hover:bg-emerald-500 shadow-sm transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                <span>Enquire for Capacity</span>
+                <i class="fa-solid fa-arrow-right text-[10px] rtl-flip"></i>
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Item 3 (200-250 LPD) -->
         <div
-          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col transition-all duration-300"
+          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col h-full transition-all duration-300"
           data-category="200-250" data-aos="fade-up" data-aos-delay="200">
-          <div class="h-64 relative overflow-hidden">
+          <div class="h-60 relative overflow-hidden shrink-0">
             <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=700&q=80"
               alt="200 LPD Family Solar Water Heater" class="w-full h-full object-cover">
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter">200 LPD Capacity</span>
-            <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mt-1 mb-2">200 LPD High-Yield Family Solar</h3>
-            <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 flex-grow font-inter">
-              Our bestselling residential capacity with 20 Cu-Ni-Al selective coated tubes, 55mm PUF insulation, and thermostatic electric backup heater.
-            </p>
-            <div class="border-t border-sage/10 pt-4 mt-auto space-y-2 text-xs text-mutedDark dark:text-gray-400 font-inter">
-              <div><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey"></i><strong>Annual Savings:</strong> ~₹20,000 / Year (7 Yr Warranty)</div>
-              <div><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange"></i><strong>Collector Type:</strong> High-Density ETC / Optional FPC</div>
-              <div><i class="fa-solid fa-house-chimney mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage"></i><strong>Best Suited For:</strong> 4–5 Members (3 Bathrooms)</div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter block mb-1">200 LPD Capacity</span>
+              <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mb-2 min-h-[3.25rem] flex items-center">200 LPD High-Yield Family Solar</h3>
+              <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 min-h-[4.25rem] leading-relaxed font-inter">
+                Our bestselling residential capacity with 20 Cu-Ni-Al selective coated tubes, 55mm PUF insulation, and thermostatic electric backup heater.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-sage/10 pt-4 mb-5 space-y-2.5 text-xs text-mutedDark dark:text-gray-400 font-inter min-h-[6.5rem]">
+                <div class="flex items-start"><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey shrink-0 mt-0.5"></i><span><strong>Annual Savings:</strong> ~₹20,000 / Year (7 Yr Warranty)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange shrink-0 mt-0.5"></i><span><strong>Collector Type:</strong> High-Density ETC / Optional FPC</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-house-chimney mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage shrink-0 mt-0.5"></i><span><strong>Best Suited For:</strong> 4–5 Members (3 Bathrooms)</span></div>
+              </div>
+              <a href="enquire.html" class="w-full text-center py-2.5 px-4 rounded-xl font-semibold bg-forest hover:bg-forest/90 text-white dark:bg-emerald-600 dark:text-white dark:hover:bg-emerald-500 shadow-sm transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                <span>Enquire for Capacity</span>
+                <i class="fa-solid fa-arrow-right text-[10px] rtl-flip"></i>
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Item 4 (200-250 LPD) -->
         <div
-          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col transition-all duration-300"
+          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col h-full transition-all duration-300"
           data-category="200-250" data-aos="fade-up">
-          <div class="h-64 relative overflow-hidden">
+          <div class="h-60 relative overflow-hidden shrink-0">
             <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=700&q=80"
               alt="250 LPD Copper FPC Solar Heater" class="w-full h-full object-cover">
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter">250 LPD Capacity</span>
-            <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mt-1 mb-2">250 LPD Copper Flat Plate (FPC)</h3>
-            <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 flex-grow font-inter">
-              Built with 2 ultrasonic-welded pure copper flat plate collectors and toughened low-iron glass for unbreakable durability and long service life.
-            </p>
-            <div class="border-t border-sage/10 pt-4 mt-auto space-y-2 text-xs text-mutedDark dark:text-gray-400 font-inter">
-              <div><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey"></i><strong>Annual Savings:</strong> ~₹24,500 / Year (10 Yr Warranty)</div>
-              <div><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange"></i><strong>Collector Type:</strong> BIS Certified Copper Flat Plate</div>
-              <div><i class="fa-solid fa-building mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage"></i><strong>Best Suited For:</strong> 5–6 Members (3–4 Bathrooms)</div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter block mb-1">250 LPD Capacity</span>
+              <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mb-2 min-h-[3.25rem] flex items-center">250 LPD Copper Flat Plate (FPC)</h3>
+              <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 min-h-[4.25rem] leading-relaxed font-inter">
+                Built with 2 ultrasonic-welded pure copper flat plate collectors and toughened low-iron glass for unbreakable durability and long service life.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-sage/10 pt-4 mb-5 space-y-2.5 text-xs text-mutedDark dark:text-gray-400 font-inter min-h-[6.5rem]">
+                <div class="flex items-start"><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey shrink-0 mt-0.5"></i><span><strong>Annual Savings:</strong> ~₹24,500 / Year (10 Yr Warranty)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange shrink-0 mt-0.5"></i><span><strong>Collector Type:</strong> BIS Certified Copper Flat Plate</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-building mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage shrink-0 mt-0.5"></i><span><strong>Best Suited For:</strong> 5–6 Members (3–4 Bathrooms)</span></div>
+              </div>
+              <a href="enquire.html" class="w-full text-center py-2.5 px-4 rounded-xl font-semibold bg-forest hover:bg-forest/90 text-white dark:bg-emerald-600 dark:text-white dark:hover:bg-emerald-500 shadow-sm transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                <span>Enquire for Capacity</span>
+                <i class="fa-solid fa-arrow-right text-[10px] rtl-flip"></i>
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Item 5 (300-500 LPD) -->
         <div
-          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col transition-all duration-300"
+          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col h-full transition-all duration-300"
           data-category="300-500" data-aos="fade-up" data-aos-delay="100">
-          <div class="h-64 relative overflow-hidden">
+          <div class="h-60 relative overflow-hidden shrink-0">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
               alt="300-500 LPD Pressurized Villa Solar Heater" class="w-full h-full object-cover">
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter">300–500 LPD Capacity</span>
-            <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mt-1 mb-2">300–500 LPD Pressurized Villa System</h3>
-            <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 flex-grow font-inter">
-              Withstands up to 6 Bar pressure pump operation for high-pressure rain showers and Jacuzzis. Includes smart digital temperature & timer controller.
-            </p>
-            <div class="border-t border-sage/10 pt-4 mt-auto space-y-2 text-xs text-mutedDark dark:text-gray-400 font-inter">
-              <div><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey"></i><strong>Annual Savings:</strong> ~₹38,000 / Year (10 Yr Warranty)</div>
-              <div><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange"></i><strong>Collector Type:</strong> Pressurized Heat-Pipe / Copper FPC</div>
-              <div><i class="fa-solid fa-door-closed mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage"></i><strong>Best Suited For:</strong> 8–12 Users (Villas & Duplexes)</div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter block mb-1">300–500 LPD Capacity</span>
+              <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mb-2 min-h-[3.25rem] flex items-center">300–500 LPD Pressurized Villa System</h3>
+              <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 min-h-[4.25rem] leading-relaxed font-inter">
+                Withstands up to 6 Bar pressure pump operation for high-pressure rain showers and Jacuzzis. Includes smart digital temperature & timer controller.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-sage/10 pt-4 mb-5 space-y-2.5 text-xs text-mutedDark dark:text-gray-400 font-inter min-h-[6.5rem]">
+                <div class="flex items-start"><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey shrink-0 mt-0.5"></i><span><strong>Annual Savings:</strong> ~₹38,000 / Year (10 Yr Warranty)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange shrink-0 mt-0.5"></i><span><strong>Collector Type:</strong> Pressurized Heat-Pipe / Copper FPC</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-door-closed mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage shrink-0 mt-0.5"></i><span><strong>Best Suited For:</strong> 8–12 Users (Villas & Duplexes)</span></div>
+              </div>
+              <a href="enquire.html" class="w-full text-center py-2.5 px-4 rounded-xl font-semibold bg-forest hover:bg-forest/90 text-white dark:bg-emerald-600 dark:text-white dark:hover:bg-emerald-500 shadow-sm transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                <span>Enquire for Capacity</span>
+                <i class="fa-solid fa-arrow-right text-[10px] rtl-flip"></i>
+              </a>
             </div>
           </div>
         </div>
 
         <!-- Item 6 (1000+ LPD Commercial) -->
         <div
-          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col transition-all duration-300"
+          class="collection-item bg-white dark:bg-[#112A19] rounded-2xl overflow-hidden shadow-sm border border-sage/10 premium-card zoom-img-container flex flex-col h-full transition-all duration-300"
           data-category="commercial" data-aos="fade-up" data-aos-delay="200">
-          <div class="h-64 relative overflow-hidden">
+          <div class="h-60 relative overflow-hidden shrink-0">
             <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=700&q=80"
               alt="1000+ LPD Commercial Solar Water Heating Array" class="w-full h-full object-cover">
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter">1000–10,000 LPD Capacity</span>
-            <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mt-1 mb-2">1000+ LPD Commercial Solar Manifold</h3>
-            <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 flex-grow font-inter">
-              Modular forced-circulation solar thermal plant with automated differential temperature controller, circulation pumps, and insulated header piping.
-            </p>
-            <div class="border-t border-sage/10 pt-4 mt-auto space-y-2 text-xs text-mutedDark dark:text-gray-400 font-inter">
-              <div><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey"></i><strong>Annual Savings:</strong> ₹1.2 Lakh+ / Year (10 Yr Warranty)</div>
-              <div><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange"></i><strong>Collector Type:</strong> Modular Series-Parallel Manifold</div>
-              <div><i class="fa-solid fa-shield mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage"></i><strong>Best Suited For:</strong> Apartments, Hotels, Hospitals & Hostels</div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-sage dark:text-cheese uppercase tracking-wider font-inter block mb-1">1000–10,000 LPD Capacity</span>
+              <h3 class="course-name font-playfair font-bold text-xl text-headingDark dark:text-creamWhite mb-2 min-h-[3.25rem] flex items-center">1000+ LPD Commercial Solar Manifold</h3>
+              <p class="course-desc text-sm text-mutedDark dark:text-gray-300 mb-4 min-h-[4.25rem] leading-relaxed font-inter">
+                Modular forced-circulation solar thermal plant with automated differential temperature controller, circulation pumps, and insulated header piping.
+              </p>
+            </div>
+            <div>
+              <div class="border-t border-sage/10 pt-4 mb-5 space-y-2.5 text-xs text-mutedDark dark:text-gray-400 font-inter min-h-[6.5rem]">
+                <div class="flex items-start"><i class="fa-solid fa-bolt mr-2 rtl:mr-0 rtl:ml-2 text-honey shrink-0 mt-0.5"></i><span><strong>Annual Savings:</strong> ₹1.2 Lakh+ / Year (10 Yr Warranty)</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-solar-panel mr-2 rtl:mr-0 rtl:ml-2 text-orange shrink-0 mt-0.5"></i><span><strong>Collector Type:</strong> Modular Series-Parallel Manifold</span></div>
+                <div class="flex items-start"><i class="fa-solid fa-shield mr-2 rtl:mr-0 rtl:ml-2 text-forest dark:text-sage shrink-0 mt-0.5"></i><span><strong>Best Suited For:</strong> Apartments, Hotels, Hostels</span></div>
+              </div>
+              <a href="enquire.html" class="w-full text-center py-2.5 px-4 rounded-xl font-semibold bg-forest hover:bg-forest/90 text-white dark:bg-emerald-600 dark:text-white dark:hover:bg-emerald-500 shadow-sm transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                <span>Enquire for Capacity</span>
+                <i class="fa-solid fa-arrow-right text-[10px] rtl-flip"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -504,83 +552,86 @@
 
   <!-- Footer -->
   <footer
-    class="bg-white text-bodyDark dark:bg-[#041008] dark:text-[#E2E8F0] pt-16 pb-8 border-t border-sage/10 dark:border-sage/5 mt-auto">
+    class="bg-white text-bodyDark dark:bg-[#041008] dark:text-[#E2E8F0] pt-14 pb-8 border-t border-sage/10 dark:border-sage/5 mt-auto font-inter">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
         <!-- Overview -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-2">
-          <!-- Logo -->
-          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group font-inter">
-            <div class="relative w-11 h-11 bg-gradient-to-tr from-forest to-emerald-700 dark:from-sage dark:to-emerald-400 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+        <div class="sm:col-span-2 lg:col-span-5 pr-0 lg:pr-6">
+          <!-- Logo (Exact match with Header) -->
+          <a href="index.html" class="inline-flex items-center space-x-3 rtl:space-x-reverse group mb-4">
+            <div class="relative w-11 h-11 bg-gradient-to-tr from-forest via-emerald-800 to-emerald-600 dark:from-emerald-500 dark:to-lime-400 rounded-2xl flex items-center justify-center shadow-md shadow-emerald-950/20 group-hover:shadow-lg group-hover:scale-105 transition-all duration-300 ring-2 ring-forest/10 dark:ring-emerald-400/20">
               <i class="fa-solid fa-sun text-creamWhite dark:text-forest text-xl relative z-10"></i>
-              <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-sage dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center">
-                <i class="fa-solid fa-droplet text-[9px] text-white dark:text-cheese"></i>
+              <span class="absolute -bottom-1 -right-1 w-5 h-5 bg-cheese dark:bg-forest rounded-full border-2 border-white dark:border-[#07170D] flex items-center justify-center shadow-sm">
+                <i class="fa-solid fa-droplet text-[9px] text-forest dark:text-cheese"></i>
               </span>
             </div>
             <div class="flex flex-col text-left rtl:text-right font-inter">
-              <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
-                SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
-              </span>
+              <div class="flex items-center gap-1.5">
+                <span class="font-bold text-xl tracking-tight text-headingDark dark:text-creamWhite leading-none">
+                  SUN<span class="text-sage dark:text-cheese font-extrabold">THERM</span>
+                </span>
+                <span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-cheese animate-pulse"></span>
+              </div>
               <span class="text-[9px] tracking-widest uppercase font-semibold text-mutedDark dark:text-gray-400 mt-1">
                 SOLAR WATER HEATERS
               </span>
             </div>
           </a>
-          <p class="text-sm text-mutedDark dark:text-gray-300 mb-6 leading-relaxed max-w-sm font-inter">
+          <p class="text-sm text-slate-600 dark:text-gray-300 mb-6 leading-relaxed max-w-sm font-inter">
             Providing MNRE-certified ETC and FPC solar water heater installations that cut electricity bills by up to 80% for homes, villas, and commercial establishments.
           </p>
-          <div class="flex space-x-4 rtl:space-x-reverse">
+          <div class="flex space-x-3 rtl:space-x-reverse">
             <a href="#"
-               class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all"
-               aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"
-               class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all"
-               aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"
-               class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-sage dark:hover:text-forest transition-all"
-               aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+              class="w-10 h-10 rounded-full border border-forest/20 dark:border-sage/30 flex items-center justify-center text-forest dark:text-creamWhite hover:bg-forest hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all hover:scale-105 shadow-sm"
+              aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
           </div>
         </div>
 
         <!-- Quick Links -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-1 lg:col-span-2">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">Quick Links</h4>
-          <ul class="space-y-2 text-sm text-mutedDark dark:text-gray-300 font-inter">
-            <li><a href="index.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Home</a></li>
-            <li><a href="home2.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Home 2</a></li>
-            <li><a href="about-us.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">About Us</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Products</a></li>
-            <li><a href="subsidy-info.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Subsidy Info</a></li>
-            <li><a href="contact.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Contact</a></li>
+          <ul class="space-y-2.5 text-sm font-inter">
+            <li><a href="index.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Home</a></li>
+            <li><a href="home2.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Home 2</a></li>
+            <li><a href="about-us.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">About Us</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Products</a></li>
+            <li><a href="subsidy-info.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Subsidy Info</a></li>
+            <li><a href="contact.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Contact</a></li>
           </ul>
         </div>
 
         <!-- Capacities -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-1 lg:col-span-2">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">By Capacity</h4>
-          <ul class="space-y-2 text-sm text-mutedDark dark:text-gray-300 font-inter">
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">100–150 LPD Systems</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">200–250 LPD Systems</a></li>
-            <li><a href="products.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">300–500 LPD Pressurized</a></li>
-            <li><a href="subsidy-info.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Govt. Subsidy Guide</a></li>
+          <ul class="space-y-2.5 text-sm font-inter">
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">100–150 LPD Systems</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">200–250 LPD Systems</a></li>
+            <li><a href="products.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">300–500 LPD Pressurized</a></li>
+            <li><a href="subsidy-info.html" class="text-slate-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-cheese font-normal hover:font-medium transition-all duration-200 inline-block hover:translate-x-1 rtl:hover:-translate-x-1">Govt. Subsidy Guide</a></li>
           </ul>
         </div>
 
         <!-- Contact Information -->
-        <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <div class="sm:col-span-2 lg:col-span-3">
           <h4 class="font-playfair font-semibold text-lg text-forest dark:text-cheese mb-4">Contact Info</h4>
-          <ul class="space-y-3 text-sm text-mutedDark dark:text-gray-300 font-inter">
+          <ul class="space-y-3 text-sm text-slate-600 dark:text-gray-300 font-inter">
             <li class="flex items-start space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-map-pin mt-1 text-forest dark:text-sage"></i>
+              <i class="fa-solid fa-map-pin mt-1 text-forest dark:text-cheese"></i>
               <span>42 Green Energy Park,<br>Sector 18, Eco City, KA 560102</span>
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-phone text-forest dark:text-sage"></i>
-              <span>+1 (800) 555-SOLAR</span>
+              <i class="fa-solid fa-phone text-forest dark:text-cheese"></i>
+              <a href="tel:18005557652" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">+1 (800) 555-SOLAR</a>
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
-              <i class="fa-solid fa-envelope text-forest dark:text-sage"></i>
-              <span>visit@sunthermsolar.com</span>
+              <i class="fa-solid fa-envelope text-forest dark:text-cheese"></i>
+              <a href="mailto:visit@sunthermsolar.com" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">visit@sunthermsolar.com</a>
             </li>
           </ul>
         </div>
@@ -588,12 +639,12 @@
 
       <!-- Bottom Footer -->
       <div
-        class="border-t border-forest/10 dark:border-sage/20 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-mutedDark dark:text-gray-400">
+        class="border-t border-forest/10 dark:border-sage/20 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-gray-400 font-inter">
         <p>&copy; 2026 SunTherm Solar Water Heater Services. All Rights Reserved.</p>
-        <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0 font-inter">
-          <a href="#" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Terms & Conditions</a>
-          <a href="enquire.html" class="hover:text-forest dark:hover:text-creamWhite transition-colors">Enquire Now</a>
+        <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
+          <a href="#" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Terms & Conditions</a>
+          <a href="enquire.html" class="hover:text-emerald-700 dark:hover:text-cheese transition-colors">Enquire Now</a>
         </div>
       </div>
     </div>
